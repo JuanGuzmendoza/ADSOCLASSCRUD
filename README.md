@@ -67,15 +67,19 @@ El proyecto está organizado bajo la estructura estándar de desarrollo:
 *   **`config/bd.js`**: Crea y exporta el pool de conexiones hacia MySQL.
 *   **`routes/`**: Define las direcciones web (URLs) que el usuario puede visitar:
     *   `inicioRoutes.js`: Ruta de la página de bienvenida.
-    *   `facturasRoutes.js`: Rutas del CRUD (Listado, Crear, Editar, Eliminar).
+    *   `facturasRoutes.js`: Rutas del CRUD para las facturas(Listado, Crear, Editar, Eliminar).
+    *   `empresasRoutes.js`: Rutas del CRUD para las empresas(Listado, Crear, Editar, Eliminar).
 *   **`controllers/`**: Contiene el "cerebro" y lógica de negocio. Recibe las peticiones, hace consultas SQL a la base de datos y renderiza las vistas.
     *   `inicioController.js`: Lógica para mostrar la página de inicio.
-    *   `facturasController.js`: Lógica MySQL para el CRUD completo.
+    *   `facturasController.js`: Lógica MySQL para el CRUD completo de las empresas.
+    *   `empresasController.js`: Lógica MySQL para el CRUD completo de las empresas.
 *   **`views/`**: Archivos HTML con la sintaxis de EJS (`.ejs`) que se pintan en el navegador.
     *   `partials/header.ejs` y `partials/footer.ejs`: Cabecera y pie de página reutilizables con estilos cargados.
     *   `inicio.ejs`: Página de bienvenida elegante.
     *   `facturas/index.ejs`: Muestra las facturas en una tabla pulida con tarjetas de métricas.
     *   `facturas/formulario.ejs`: Formulario reutilizado para agregar nuevas facturas y editar existentes de forma clara.
+    *   `empresas/index.ejs`: Muestra las empresas en una tabla pulida con tarjetas de métricas.
+    *   `empresas/formulario.ejs`: Formulario reutilizado para agregar nuevas empresas y editar existentes de forma clara.
 *   **`public/`**: Archivos estáticos accesibles por el navegador:
     *   `css/estilos.css`: Hoja de estilos moderna y premium.
     *   `js/scripts.js`: Código del frontend para alertas interactivas y confirmación de borrado.

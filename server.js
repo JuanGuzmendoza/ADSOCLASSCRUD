@@ -19,10 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Importar las rutas
 const inicioRoutes = require('./routes/inicioRoutes');
 const facturasRoutes = require('./routes/facturasRoutes');
-
+const empresasRoutes = require('./routes/empresasRoutes');
 // Registrar las rutas en la aplicación
 app.use('/', inicioRoutes);
 app.use('/facturas', facturasRoutes);
+app.use('/empresas', empresasRoutes);
 
 // Servidor escuchando en el puerto configurado
 app.listen(PORT, () => {

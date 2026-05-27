@@ -1,31 +1,6 @@
 const bd = require('../config/bd');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // --- 1. OBTENER TODAS LAS FACTURAS (LEER) ---
 exports.obtenerTodas = (req, res) => {
     // Consulta para obtener todas las facturas ordenadas por fecha de pago descendente
