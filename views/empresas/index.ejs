@@ -52,7 +52,6 @@
                             <th>Id empresa</th>
                             <th>Nombre</th>
                             <th>Email</th>
-                            <th>Fecha Creado </th>
                             <th class="text-center" style="width: 180px;">Acciones</th>
                         </tr>
                     </thead>
@@ -71,10 +70,6 @@
                                     <span class="text-success fw-semibold">
                                         <%= empresas.email %>
                                     </span>
-                                </td>
-                                <td>
-                                    <i class="bi bi-calendar3 me-1 text-muted"></i>
-                                    <%= new Date(empresas.creado_en).toLocaleDateString('es-CO', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' }) %>
                                 </td>
 
                                 <td>

@@ -20,10 +20,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 const inicioRoutes = require('./routes/inicioRoutes');
 const facturasRoutes = require('./routes/facturasRoutes');
 const empresasRoutes = require('./routes/empresasRoutes');
+const chatbotRoutes = require('./routes/chatbotRoutes');
 // Registrar las rutas en la aplicación
 app.use('/', inicioRoutes);
 app.use('/facturas', facturasRoutes);
 app.use('/empresas', empresasRoutes);
+app.use('/chatbot', chatbotRoutes);
 
 // Servidor escuchando en el puerto configurado
 app.listen(PORT, () => {

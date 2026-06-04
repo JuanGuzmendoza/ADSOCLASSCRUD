@@ -23,8 +23,7 @@ exports.mostrarFormularioCrear = (req, res) => {
     const empresaVacia = {
         id: '',
         nombre: '',
-        email: '',
-        creado_en: ''
+        email: ''
     };
 
     res.render('empresas/formulario', { 

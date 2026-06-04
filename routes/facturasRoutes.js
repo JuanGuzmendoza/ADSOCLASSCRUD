@@ -22,4 +22,7 @@ router.post('/editar/:id', facturasController.actualizarFactura);
 // ELIMINAR (Procesar eliminación)
 router.post('/eliminar/:id', facturasController.eliminarFactura);
 
+// IA (Procesar mejora de descripción)
+router.post('/generar-descripcion', facturasController.generarDescripcionIA);
+
 module.exports = router;
